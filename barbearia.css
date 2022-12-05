@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2, p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-principal{
+    padding: 20px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.principal{
+    background-color: #CCCCCC;
+    padding: 30px;
+}
+
+.missao{
+    font-size: 20px;
+}
+
+.qualidade{
+    color: red;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+li{
+    font-style: italic;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.beneficios{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
