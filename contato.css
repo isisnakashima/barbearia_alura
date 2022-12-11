@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #BBBBBB;
+}
+
+
+h1 {
+    display: inline-block;
+}
+
+.logo {
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+nav ul {
+    margin-left: 800px;
+    display: inline-block;
+    position: relative;
+    bottom: 140px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: 2px underline;
+}
+
+footer {
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 10px;
+    padding: 5px 30px;
+    width: 30%;
+}
+
+.checkbok{
+    margin: 20px 0;
+}
+
+/* o id é o mais forte, depois vem a class e só depois vem a tag. então quando é colocado no css a mesma coisa 
+por exemplo, um p com class="ab" e um id="ab", o código:
+
+.ab{
+    color: red;
+}
+
+#ab{
+    color: blue;
+}
+
+p{
+    color: green;
+}
+a cor apresentada seria blue pois o id tem mais força do que os dois, depois viria o red e só então o green 
+também há a possibilidade de soma das prioridades. por exemplo, se uma class tem o valor 10, uma tag tem o valor
+ 1 e um id tem o valor 100, quando colocado p.ab o resultado disso seria 11.
+ então caso fosse:
+
+ p.ab{ o valor aqui seria 11
+    color:pink;
+ }
+ 
+ #ab{ o valor aqui seria 100
+    color:white;
+ }
+
+ a cor que seria mostrada, nesse caso, é o branco. o css interno (no HTML) é o mais forte deles 4, então ele tem prioridade.
+ */
+
+ .enviar{
+    width: 40%;
+    padding: 10px 0;
+    background: cornflowerblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 3s all; /* fala o tempo que a transição vai acontecer e depois em qual elemento
+    nesse caso, quando o mouse passa por cima do botão a transição ocorre em 3s para acontecer a transição 
+    e ela é gradual, não igual acontece no hover, que é instantâneo, a transição é mais suave */
+    /* no transition quando queremos somente em um elemento específico, coloca o valor da transição depois o
+    elemento, quando queremos todos os elementos colocamos o valor da transição depois o all. Nesse caso, queremos que
+    todos os elementos que estão no .enviar:hover façam uma transição de 3s*/
+    cursor: pointer;
+ }
+
+ .enviar:hover{
+    background: blue;
+    /*transform: scale(1.2);*/ /* com isso ele aumenta 20% o tamanho do botão, sem eu precisar fazer nenhuma conta, 
+    mas o scale é multiplicado e não somado*/
+    /*transform: rotate(20deg); */ /* ele inclina 20 graus, mas o scale é ignorado pq como o css é em cascate
+    o último é lido e o anterior, ignorado*/
+    transform: scale(1.2) /*rotate(20deg)*/; /* aqui, nenhuma das duas é ignorada, elas somam*/
+ }
+
+ table{
+    margin: 20px 0 40px;
+ }
+
+ thead{
+    background: #000000;
+    color: white;
+    font-weight: bold;
+ }
+
+ td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+ }
