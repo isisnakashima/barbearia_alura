@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="contato.css">
+    <title>Produtos da Barbearia Alura</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img class="logo" src="imagens/logo.png" alt="logo">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="barbearia.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Digite o seu Nome e Sobrenome: </label> <!-- label e input sempre andam juntos -->
+            <input type="text" placeholder="Nome e Sobrenome" id="nome" class="input-padrao" required>
+
+            <label for="email">Digite seu e-mail: </label>
+            <!--o id e o for tem que ser iguais -->
+            <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
+
+            <label for="telefone">Digite seu telefone: </label>
+            <input type="text" placeholder="(XX) XXXXX-XXXX" id="telefone" class="input-padrao" required>
+
+            <label for="mensagem">Digite seu texto: </label>
+            <textarea cols="30" rows="5" placeholder="Seu texto" id="mensagem" class="input-padrao" required></textarea>
+            <!-- não usa o input porque não é uma entrada simples de texto -->
+            <!-- possibilita mais de uma linha de texto, um conteúdo complexo -->
+
+            <div>
+                <p>Como prefere o nosso contato? </p>
+                <label for="radio-email"><input type="radio" name="contato" value="radio-email" id="radio-email"
+                        placeholder="email"> E-mail</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="radio-telefone"
+                        id="radio-telefone" placeholder="radio-telefone"> Telefone</label>
+
+                <label for="wpp"><input type="radio" name="contato" value="wpp" id="wpp" placeholder="wpp" checked>
+                    Whatsapp</label>
+                <!-- o name serve para que eles sejam do mesmo grupo, então só pode marcar um deles -->
+            </div>
+
+            <div>
+                <label for="horario">Qual horário prefere ser atendido?</label>
+                <select id="horario">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+
+            <label><input type="checkbox" placeholder="checkbox" class="checkbox" checked> Gostaria de receber as nossas
+                novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar"> <!-- Submit não precisa de label -->
+        </form>
+
+        <table>
+            <thead>
+                <!-- cabeçalho da tabela -->
+                <tr>
+                    <!-- forma linha na tabela -->
+                    <th>Dia</th> <!-- forma coluna na tabela-->
+                    <th>Horário</th> <!-- usa th pq é uma celula do head da tabela -->
+                </tr>
+            </thead>
+            <tbody> <!-- corpo da tabela -->
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imagens/logo-branco.png" alt="logo-branco">
+        <p class="copyright"> &copy; Copyright Barbearia Alura - 2022</p>
+        <!-- o &copy; é o c de copyright, no unicode tem vários simbolos assim-->
+    </footer>
+
+</html>
+</body>
